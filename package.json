@@ -1,0 +1,30 @@
+{
+  "name": "now",
+  "version": "1.0.0",
+  "description": "",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node service.js",
+    "appClient": "cd client && npm start",
+    "ckeditor": "concurrently \" node service.js\" \" npm run appClient\""
+  },
+  "author": "NEttEN: Atibodee Mahawan",
+  "license": "ISC",
+  "dependencies": {
+    "@ckeditor/ckeditor5-adapter-ckfinder": "^27.1.0",
+    "@ckeditor/ckeditor5-ckfinder": "^27.1.0",
+    "@ckeditor/ckeditor5-upload": "^27.1.0",
+    "@koa/multer": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^3.4.1",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.7",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^11.3.2",
+    "react-html-parser": "^2.0.2"
+  }
+}
